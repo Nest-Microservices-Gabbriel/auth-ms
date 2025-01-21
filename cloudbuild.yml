@@ -16,5 +16,7 @@ steps:
         'push',
         'southamerica-west1-docker.pkg.dev/tienda-microservicios-448420/image-registry/auth-ms',
       ]
-  - options:
-    logging: CLOUD_LOGGING_ONLY
+
+options:
+  logging: CLOUD_LOGGING_ONLY # Usa solo Cloud Logging para los registros
+serviceAccount: 'my-service-account@tienda-microservicios-448420.iam.gserviceaccount.com' # Reemplaza con tu cuenta de servicio personalizada
